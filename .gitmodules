@@ -1,0 +1,8 @@
+[submodule "metasploit-framework"]
+	path = exploitation/metasploit-framework/metasploit-framework
+	url = git@github.com:rapid7/metasploit-framework.git
+	ignore = dirty
+[submodule "impacket"]
+	path = exploitation/impacket/impacket
+	url = git@github.com:SecureAuthCorp/impacket.git
+	ignore = dirty
