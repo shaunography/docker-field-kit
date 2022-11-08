@@ -17,3 +17,12 @@
 [submodule "adidnsdump"]
 	path = post-exploitation/adidnsdump/adidnsdump
 	url = git@github.com:dirkjanm/adidnsdump.git
+	ignore = dirty
+[submodule "gobuster"]
+	path = intelligence-gathering/gobuster/gobuster
+	url = git@github.com:OJ/gobuster.git
+	ignore = dirty
+[submodule "LdapRelayScan"]
+	path = vulnerability-analysis/LdapRelayScan/LdapRelayScan
+	url = git@github.com:zyn3rgy/LdapRelayScan.git
+	ignore = dirty
