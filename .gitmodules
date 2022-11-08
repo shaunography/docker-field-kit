@@ -30,3 +30,7 @@
 	path = vulnerability-analysis/jwt_tool/jwt_tool
 	url = git@github.com:ticarpi/jwt_tool.git
 	ignore = dirty
+[submodule "checkov"]
+	path = vulnerability-analysis/checkov/checkov
+	url = git@github.com:bridgecrewio/checkov.git
+	ignore = dirty
