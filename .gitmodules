@@ -9,3 +9,8 @@
 [submodule "Certipy"]
 	path = exploitation/Certipy/Certipy
 	url = git@github.com:ly4k/Certipy.git
+	ignore = dirty
+[submodule "krbrelayx"]
+	path = exploitation/krbrelayx/krbrelayx
+	url = git@github.com:dirkjanm/krbrelayx.git
+	ignore = dirty
