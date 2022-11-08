@@ -26,3 +26,7 @@
 	path = vulnerability-analysis/LdapRelayScan/LdapRelayScan
 	url = git@github.com:zyn3rgy/LdapRelayScan.git
 	ignore = dirty
+[submodule "jwt_tool"]
+	path = vulnerability-analysis/jwt_tool/jwt_tool
+	url = git@github.com:ticarpi/jwt_tool.git
+	ignore = dirty
