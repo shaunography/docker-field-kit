@@ -1,0 +1,76 @@
+## Kali
+FROM kalilinux/kali-rolling
+
+ENV SHELL=/bin/bash
+ENV LANG=en_US.UTF-8i
+
+COPY ./config/.bashrc /root/.bashrc
+#COPY ./config/.bash_aliases /root/.bash_aliases
+COPY ./config/inputrc /etc/inputrc
+
+RUN apt-get update --fix-missing && apt-get upgrade -y && apt-get dist-upgrade -y && DEBIAN_FRONTEND=noninteractive apt-get install -y \
+    python3 \
+    python3-pip \
+    python2 \
+    #python-pip \
+    aircrack-ng \
+    wifite \
+    hashcat \
+    dsniff \
+    driftnet \
+    arp-scan \
+    bully \
+    hostapd-wpe \
+    reaver \
+    cowpatty \
+    hcxdumptool \
+    hcxtools \
+    john \
+    git \
+    iproute2 \
+    macchanger \
+    wpasupplicant \
+    tshark \
+    wget \
+    vim \
+    wifiphisher \
+    nmap \
+    sipcalc \
+    curl \
+    wget \
+    pciutils
+
+## Git Tools
+### Create known_hosts for git cloning
+#RUN mkdir /root/.ssh/ && touch /root/.ssh/known_hosts
+### Add host keys
+#RUN ssh-keyscan github.com >> /root/.ssh/known_hosts
+
+
+WORKDIR /opt/
+# Install pip2
+RUN wget https://bootstrap.pypa.io/pip/2.7/get-pip.py && python2 get-pip.py
+
+RUN git clone https://github.com/WJDigby/apd_launchpad
+RUN python2 -m pip install jinja2
+
+RUN git clone https://github.com/Wh1t3Rh1n0/air-hammer/
+RUN python2 -m pip install wpa_supplicant
+
+RUN git clone https://github.com/lgandx/PCredz
+RUN apt-get install -y libpcap-dev && python3 -m pip install Cython && python3 -m pip install python-libpcap
+
+#RUN git clone https://github.com/JPaulMora/Pyrit
+##RUN apt-get install -y  python-scapy
+#RUN python2 -m pip install psycopg2 scapy
+#WORKDIR /opt/Pyrit/
+#RUN python2 setup.py clean && python2 setup.py build && python2 setup.py install
+
+WORKDIR /opt/
+RUN git clone https://github.com/s0lst1c3/eaphammer
+WORKDIR /opt/eaphammer
+RUN yes | ./kali-setup
+
+WORKDIR /opt
+
+CMD /bin/bash
