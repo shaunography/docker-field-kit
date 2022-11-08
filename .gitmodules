@@ -6,3 +6,6 @@
 	path = exploitation/impacket/impacket
 	url = git@github.com:SecureAuthCorp/impacket.git
 	ignore = dirty
+[submodule "Certipy"]
+	path = exploitation/Certipy/Certipy
+	url = git@github.com:ly4k/Certipy.git
