@@ -34,3 +34,6 @@
 	path = vulnerability-analysis/checkov/checkov
 	url = git@github.com:bridgecrewio/checkov.git
 	ignore = dirty
+[submodule "ldapdomaindump"]
+	path = post-exploitation/ldapdomaindump/ldapdomaindump
+	url = git@github.com:dirkjanm/ldapdomaindump.git
