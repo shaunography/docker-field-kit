@@ -1,0 +1,4 @@
+FROM python:slim
+COPY ./EyeWitness /opt/
+RUN /opt/Python/setup/setup.sh
+ENTRYPOINT ["python", "/opt/Python/EyeWitness.py", "--no-prompt"]

@@ -70,3 +70,7 @@
 	path = post-exploitation/smbmap/smbmap
 	url = git@github.com:ShawnDEvans/smbmap.git
 	ignore = dirty
+[submodule "EyeWitness"]
+	path = intelligence-gathering/EyeWitness/EyeWitness
+	url = git@github.com:FortyNorthSecurity/EyeWitness.git
+	ignore = dirty
