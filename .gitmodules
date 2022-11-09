@@ -37,3 +37,6 @@
 [submodule "ldapdomaindump"]
 	path = post-exploitation/ldapdomaindump/ldapdomaindump
 	url = git@github.com:dirkjanm/ldapdomaindump.git
+[submodule "Responder"]
+	path = exploitation/Responder/Responder
+	url = git@github.com:lgandx/Responder.git
