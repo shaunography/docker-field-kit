@@ -58,3 +58,15 @@
 	path = intelligence-gathering/cloud_enum/cloud_enum
 	url = git@github.com:initstring/cloud_enum.git
 	ignore = dirty
+[submodule "LinkFinder"]
+	path = intelligence-gathering/LinkFinder/LinkFinder
+	url = git@github.com:GerbenJavado/LinkFinder.git
+	ignore = dirty
+[submodule "msldap"]
+	path = post-exploitation/msldap/msldap
+	url = git@github.com:skelsec/msldap.git
+	ignore = dirty
+[submodule "smbmap"]
+	path = post-exploitation/smbmap/smbmap
+	url = git@github.com:ShawnDEvans/smbmap.git
+	ignore = dirty
