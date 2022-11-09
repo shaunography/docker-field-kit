@@ -37,6 +37,20 @@
 [submodule "ldapdomaindump"]
 	path = post-exploitation/ldapdomaindump/ldapdomaindump
 	url = git@github.com:dirkjanm/ldapdomaindump.git
+	ignore = dirty
 [submodule "Responder"]
 	path = exploitation/Responder/Responder
 	url = git@github.com:lgandx/Responder.git
+	ignore = dirty
+[submodule "evil-winrm"]
+	path = post-exploitation/evil-winrm/evil-winrm
+	url = git@github.com:Hackplayers/evil-winrm.git
+	ignore = dirty
+[submodule "lsassy"]
+	path = post-exploitation/lsassy/lsassy
+	url = git@github.com:Hackndo/lsassy.git
+	ignore = dirty
+[submodule "rsh"]
+	path = post-exploitation/rsh/rsh
+	url = git@github.com:mzfr/rsh.git
+	ignore = dirty
