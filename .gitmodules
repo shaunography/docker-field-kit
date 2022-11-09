@@ -54,3 +54,7 @@
 	path = post-exploitation/rsh/rsh
 	url = git@github.com:mzfr/rsh.git
 	ignore = dirty
+[submodule "cloud_enum"]
+	path = intelligence-gathering/cloud_enum/cloud_enum
+	url = git@github.com:initstring/cloud_enum.git
+	ignore = dirty
