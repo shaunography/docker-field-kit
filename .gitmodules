@@ -74,3 +74,7 @@
 	path = intelligence-gathering/EyeWitness/EyeWitness
 	url = git@github.com:FortyNorthSecurity/EyeWitness.git
 	ignore = dirty
+[submodule "gMSADumper"]
+	path = post-exploitation/gMSADumper/gMSADumper
+	url = git@github.com:micahvandeusen/gMSADumper.git
+	ignore = dirty
