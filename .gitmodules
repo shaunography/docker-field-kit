@@ -82,3 +82,19 @@
 	path = post-exploitation/Coercer/Coercer
 	url = git@github.com:p0dalirius/Coercer.git
 	ignore = dirty
+[submodule "DFSCoerce"]
+	path = post-exploitation/DFSCoerce/DFSCoerce
+	url = git@github.com:Wh04m1001/DFSCoerce.git
+	ignore = dirty
+[submodule "PetitPotam"]
+	path = post-exploitation/PetitPotam/PetitPotam
+	url = git@github.com:topotam/PetitPotam.git
+	ignore = dirty
+[submodule "ly4k_PetitPotam"]
+	path = post-exploitation/ly4k_PetitPotam/PetitPotam
+	url = git@github.com:ly4k/PetitPotam.git
+	ignore = dirty
+[submodule "ShadowCoerce"]
+	path = post-exploitation/ShadowCoerce/ShadowCoerce
+	url = git@github.com:ShutdownRepo/ShadowCoerce.git
+	ignore = dirty
