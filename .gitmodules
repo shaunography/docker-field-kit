@@ -98,3 +98,7 @@
 	path = post-exploitation/ShadowCoerce/ShadowCoerce
 	url = git@github.com:ShutdownRepo/ShadowCoerce.git
 	ignore = dirty
+[submodule "pypykatz"]
+	path = post-exploitation/pypykatz/pypykatz
+	url = git@github.com:skelsec/pypykatz.git
+	ignore = dirty
