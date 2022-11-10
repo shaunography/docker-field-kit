@@ -1,0 +1,4 @@
+FROM python:slim
+COPY ./CtfCryptoTool/ /opt/
+WORKDIR /opt/
+ENTRYPOINT ["python", "CtfCrpytoTool.py"]

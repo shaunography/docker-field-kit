@@ -102,3 +102,27 @@
 	path = post-exploitation/pypykatz/pypykatz
 	url = git@github.com:skelsec/pypykatz.git
 	ignore = dirty
+[submodule "PCredz"]
+	path = exploitation/PCredz/PCredz
+	url = git@github.com:lgandx/PCredz.git
+	ignore = dirty
+[submodule "pwncat"]
+	path = post-exploitation/pwncat/pwncat
+	url = git@github.com:calebstewart/pwncat.git
+	ignore = dirty
+[submodule "PyFuscation"]
+	path = post-exploitation/PyFuscation/PyFuscation
+	url = git@github.com:CBHue/PyFuscation.git
+	ignore = dirty
+[submodule "docker-openvpn-network-lock"]
+	path = util/docker-openvpn-network-lock/docker-openvpn-network-lock
+	url = git@github.com:shaunography/docker-openvpn-network-lock.git
+	ignore = dirty
+[submodule "SILENTTRINITY"]
+	path = c2/SILENTTRINITY/SILENTTRINITY
+	url = git@github.com:byt3bl33d3r/SILENTTRINITY.git
+	ignore = dirty
+[submodule "CtfCryptoTool"]
+	path = util/CtfCryptoTool/CtfCryptoTool
+	url = git@github.com:FlameOfIgnis/CtfCryptoTool.git
+	ignore = dirty
