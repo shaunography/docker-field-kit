@@ -1,0 +1,4 @@
+FROM python:slim
+COPY /o365enum /opt/o365enum
+RUN python -m pip install requests
+ENTRYPOINT ["python", "/opt/o365enum/o365enum.py"]

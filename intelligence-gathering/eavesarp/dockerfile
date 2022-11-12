@@ -1,0 +1,5 @@
+FROM python:latest
+COPY ./eavesarp /opt/eavesarp
+WORKDIR /opt/eavesarp
+RUN python -m pip install -r requirements.txt
+ENTRYPOINT ["python", "eavesarp.py"]

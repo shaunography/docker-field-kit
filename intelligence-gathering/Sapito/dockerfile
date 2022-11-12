@@ -1,0 +1,5 @@
+FROM python:slim
+COPY ./Sapito /opt/Sapito
+WORKDIR /opt/Sapito
+RUN python -m pip install -r requirements.txt
+ENTRYPOINT ["python", "sapito.py"]

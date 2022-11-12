@@ -1,0 +1,5 @@
+FROM python:slim
+COPY ./CrossLinked /opt/CrossLinked
+WORKDIR /opt/CrossLinked
+RUN python -m pip install -r requirements.txt
+ENTRYPOINT ["python", "crosslinked.py"]

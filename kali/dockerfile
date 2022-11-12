@@ -109,7 +109,8 @@ RUN apt-get update --fix-missing && apt-get upgrade -y && apt-get dist-upgrade -
     tnftp \
     ftp-ssl \
     tftp \
-    theharvester
+    theharvester \
+    netdiscover
 
 WORKDIR /opt
 
@@ -144,6 +145,7 @@ RUN git clone https://github.com/p0dalirius/Coercer
 RUN git clone https://github.com/zyn3rgy/LdapRelayScan
 RUN git clone https://github.com/eldraco/Sapito
 RUN git clone https://github.com/joaomatosf/jexboss
+RUN git clone https://github.com/gremwell/o365enum.git
 
 #WORKDIR /opt/inf/PCredz
 RUN apt-get install -y libpcap-dev && python3 -m pip install Cython && python3 -m pip install python-libpcap

@@ -126,3 +126,55 @@
 	path = util/CtfCryptoTool/CtfCryptoTool
 	url = git@github.com:FlameOfIgnis/CtfCryptoTool.git
 	ignore = dirty
+[submodule "awspx"]
+	path = vulnerability-analysis/awspx/awspx
+	url = git@github.com:FSecureLABS/awspx.git
+	ignore = dirty
+[submodule "PMapper"]
+	path = vulnerability-analysis/PMapper/PMapper
+	url = git@github.com:nccgroup/PMapper.git
+	ignore = dirty
+[submodule "snotra"]
+	path = vulnerability-analysis/snotra/snotra
+	url = git@github.com:shaunography/snotra.git
+	ignore = dirty
+[submodule "CrossLinked"]
+	path = intelligence-gathering/CrossLinked/CrossLinked
+	url = git@github.com:m8r0wn/CrossLinked.git
+	ignore = dirty
+[submodule "eavesarp"]
+	path = intelligence-gathering/eavesarp/eavesarp
+	url = git@github.com:arch4ngel/eavesarp.git
+	ignore = dirty
+[submodule "Sapito"]
+	path = intelligence-gathering/Sapito/Sapito
+	url = git@github.com:eldraco/Sapito.git
+	ignore = dirty
+[submodule "o365enum"]
+	path = intelligence-gathering/o365enum/o365enum
+	url = git@github.com:gremwell/o365enum.git
+	ignore = dirty
+[submodule "theHarvester"]
+	path = intelligence-gathering/theHarvester/theHarvester
+	url = git@github.com:laramies/theHarvester.git
+	ignore = dirty
+[submodule "Photon"]
+	path = intelligence-gathering/Photon/Photon
+	url = git@github.com:s0md3v/Photon.git
+	ignore = dirty
+[submodule "MANSPIDER"]
+	path = post-exploitation/MANSPIDER/MANSPIDER
+	url = git@github.com:blacklanternsecurity/MANSPIDER.git
+	ignore = dirty
+[submodule "cve-2019-1040-scanner"]
+	path = intelligence-gathering/cve-2019-1040-scanner/cve-2019-1040-scanner
+	url = git@github.com:fox-it/cve-2019-1040-scanner.git
+	ignore = dirty
+[submodule "Seth"]
+	path = exploitation/Seth/Seth
+	url = git@github.com:SySS-Research/Seth.git
+	ignore = dirty
+[submodule "mitm6"]
+	path = exploitation/mitm6/mitm6
+	url = git@github.com:fox-it/mitm6.git
+	ignore = dirty
