@@ -234,3 +234,7 @@
 	path = vulnerability-analysis/XSStrike/XSStrike
 	url = git@github.com:s0md3v/XSStrike.git
 	ignore = dirty
+[submodule "PowerHub"]
+	path = post-exploitation/PowerHub/PowerHub
+	url = git@github.com:AdrianVollmer/PowerHub.git
+	ignore = dirty
