@@ -178,3 +178,51 @@
 	path = exploitation/mitm6/mitm6
 	url = git@github.com:fox-it/mitm6.git
 	ignore = dirty
+[submodule "ysoserial"]
+	path = exploitation/ysoserial/ysoserial
+	url = git@github.com:frohoff/ysoserial.git
+	ignore = dirty
+[submodule "rmiscout"]
+	path = exploitation/rmiscout/rmiscout
+	url = git@github.com:BishopFox/rmiscout.git
+	ignore = dirty
+[submodule "PrivExchange"]
+	path = exploitation/PrivExchange/PrivExchange
+	url = git@github.com:dirkjanm/PrivExchange.git
+	ignore = dirty
+[submodule "fuxploider"]
+	path = exploitation/fuxploider/fuxploider
+	url = git@github.com:almandin/fuxploider.git
+	ignore = dirty
+[submodule "dhtest"]
+	path = exploitation/dhtest/dhtest
+	url = git@github.com:saravana815/dhtest.git
+	ignore = dirty
+[submodule "TREVORspray"]
+	path = exploitation/TREVORspray/TREVORspray
+	url = git@github.com:blacklanternsecurity/TREVORspray.git
+	ignore = dirty
+[submodule "cloudmapper"]
+	path = vulnerability-analysis/cloudmapper/cloudmapper
+	url = git@github.com:duo-labs/cloudmapper.git
+	ignore = dirty
+[submodule "fuzzdb"]
+	path = wordlists/fuzzdb
+	url = git@github.com:fuzzdb-project/fuzzdb.git
+	ignore = dirty
+[submodule "PayloadsAllTheThings"]
+	path = wordlists/PayloadsAllTheThings
+	url = git@github.com:swisskyrepo/PayloadsAllTheThings.git
+	ignore = dirty
+[submodule "SecLists"]
+	path = wordlists/SecLists
+	url = git@github.com:danielmiessler/SecLists.git
+	ignore = dirty
+[submodule "kerberos_enum_userlists"]
+	path = wordlists/kerberos_enum_userlists
+	url = git@github.com:attackdebris/kerberos_enum_userlists.git
+	ignore = dirty
+[submodule "statistically-likely-usernames"]
+	path = wordlists/statistically-likely-usernames
+	url = git@github.com:insidetrust/statistically-likely-usernames.git
+	ignore = dirty
