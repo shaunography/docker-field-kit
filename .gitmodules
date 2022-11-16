@@ -238,3 +238,7 @@
 	path = post-exploitation/PowerHub/PowerHub
 	url = git@github.com:AdrianVollmer/PowerHub.git
 	ignore = dirty
+[submodule "PKINITtools"]
+	path = post-exploitation/PKINITtools/PKINITtools
+	url = git@github.com:dirkjanm/PKINITtools.git
+	ignore = dirty
