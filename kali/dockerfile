@@ -145,7 +145,7 @@ RUN git clone https://github.com/p0dalirius/Coercer
 RUN git clone https://github.com/zyn3rgy/LdapRelayScan
 RUN git clone https://github.com/eldraco/Sapito
 RUN git clone https://github.com/joaomatosf/jexboss
-RUN git clone https://github.com/gremwell/o365enum.git
+RUN git clone https://github.com/gremwell/o365enum
 
 #WORKDIR /opt/inf/PCredz
 RUN apt-get install -y libpcap-dev && python3 -m pip install Cython && python3 -m pip install python-libpcap
@@ -188,6 +188,7 @@ RUN wget https://github.com/OJ/gobuster/releases/download/v3.0.1/gobuster-linux-
 RUN wget https://github.com/sensepost/gowitness/releases/download/2.2.0/gowitness-2.2.0-linux-amd64
 RUN wget https://github.com/hdm/nextnet/releases/download/v0.0.2/nextnet_0.0.2_linux_amd64.tar.gz
 RUN wget https://github.com/liamg/traitor/releases/download/v0.0.14/traitor-amd64
+RUN wget https://github.com/lkarlslund/ldapnomnom/releases/download/v1.0.7/ldapnomnom-linux-amd64
 
 RUN wget https://github.com/jpillora/chisel/releases/download/v1.7.6/chisel_1.7.6_linux_386.gz
 RUN wget https://github.com/jpillora/chisel/releases/download/v1.7.6/chisel_1.7.6_linux_amd64.gz

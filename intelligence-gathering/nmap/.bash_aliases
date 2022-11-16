@@ -1,4 +1,8 @@
 ## nmap
+nmap-discovery-fast() {
+sudo nmap -sn -T4 -n --open --max-retries 0 --host-timeout 12 -oA nmap-discovery-fast-%Y_%m_%d-%H_%M_%S $*
+}
+
 nmap-discovery() {
 sudo nmap -PS21-23,25,53,80,110-111,135,139,143,199,443,445,587,993,995,1025,1720,1723,3306,3389,5900,8080,8888 -PE -PP -PM -PU53,69,111,123,137,161,500,514,520 -sn -T4 -n --open -oA nmap-discovery-%Y_%m_%d-%H_%M_%S $*
 }
