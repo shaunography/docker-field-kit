@@ -230,3 +230,7 @@
 	path = vulnerability-analysis/Arjun/Arjun
 	url = git@github.com:s0md3v/Arjun.git
 	ignore = dirty
+[submodule "XSStrike"]
+	path = vulnerability-analysis/XSStrike/XSStrike
+	url = git@github.com:s0md3v/XSStrike.git
+	ignore = dirty
