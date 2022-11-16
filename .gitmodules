@@ -226,3 +226,7 @@
 	path = wordlists/statistically-likely-usernames
 	url = git@github.com:insidetrust/statistically-likely-usernames.git
 	ignore = dirty
+[submodule "Arjun"]
+	path = vulnerability-analysis/Arjun/Arjun
+	url = git@github.com:s0md3v/Arjun.git
+	ignore = dirty
