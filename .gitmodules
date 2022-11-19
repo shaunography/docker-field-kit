@@ -242,8 +242,3 @@
 	path = post-exploitation/PKINITtools/PKINITtools
 	url = git@github.com:dirkjanm/PKINITtools.git
 	ignore = dirty
-[submodule "bloodyAD"]
-	path = post-exploitation/bloodyAD/bloodyAD
-	url = git@github.com:CravateRouge/bloodyAD.git
-	ignore = dirty
-
