@@ -99,7 +99,9 @@ def main():
         "72063" : "ipmi",
         "53337" : "jboss_jmx_console_bypass",
         "46181" : "jboss_web_console_bypass",
-        "151440" : "spooler_service"
+        "151440" : "spooler_service",
+        "97833" : "ms17-010",
+        "125313" : "bluekeep"
     }
     
     results_ips = {}
