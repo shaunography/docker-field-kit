@@ -1,3 +1,4 @@
+### go buster ###
 alias dgobuster='docker run --network host --rm -ti -v ~:/home/$(whoami) -v /media:/media gobuster'
 
 dgobuster_common() {

@@ -5,7 +5,7 @@ ENV SHELL=/bin/bash
 ENV LANG=en_US.UTF-8i
 
 COPY ./config/.bashrc /root/.bashrc
-COPY ./config/.bash_aliases /root/.bash_aliases
+COPY ./config/aliases /root/.bash_aliases
 COPY ./config/inputrc /etc/inputrc
 
 RUN apt-get update --fix-missing && apt-get upgrade -y && apt-get dist-upgrade -y && DEBIAN_FRONTEND=noninteractive apt-get install -y \

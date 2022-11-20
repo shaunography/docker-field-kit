@@ -40,3 +40,4 @@ aws-mfa-session() {
     aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY --profile mfa
     aws configure set aws_session_token $AWS_SESSION_TOKEN --profile mfa
 }
+

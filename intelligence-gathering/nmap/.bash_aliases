@@ -1,4 +1,4 @@
-## nmap
+### nmap ###
 nmap-discovery-fast() {
 sudo nmap -sn -T4 -n --open --max-retries 0 --host-timeout 12 -oA nmap-discovery-fast-%Y_%m_%d-%H_%M_%S $*
 }
