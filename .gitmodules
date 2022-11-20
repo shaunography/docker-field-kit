@@ -274,3 +274,11 @@
 	path = post-exploitation/pgexec/pgexec
 	url = git@github.com:dionach/pgexec.git
 	ignore = dirty
+[submodule "SharpCollection"]
+	path = post-exploitation/SharpCollection/SharpCollection
+	url = git@github.com:Flangvik/SharpCollection.git
+	ignore = dirty
+[submodule "PEzor"]
+	path = post-exploitation/PEzor/PEzor
+	url = git@github.com:phra/PEzor.git
+	ignore = dirty
