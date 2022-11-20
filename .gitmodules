@@ -245,6 +245,32 @@
 [submodule "bloodyAD"]
 	path = exploitation/bloodyAD/bloodyAD
 	url = git@github.com:CravateRouge/bloodyAD.git
+	ignore = dirty
 [submodule "GitTools"]
 	path = vulnerability-analysis/GitTools/GitTools
 	url = git@github.com:internetwache/GitTools.git
+	ignore = dirty
+[submodule "PoshC2"]
+	path = c2/PoshC2/PoshC2
+	url = git@github.com:nettitude/PoshC2.git
+	ignore = dirty
+[submodule "Covenant"]
+	path = c2/Covenant/Covenant
+	url = git@github.com:cobbr/Covenant.git
+	ignore = dirty
+[submodule "pupy"]
+	path = c2/pupy/pupy
+	url = git@github.com:n1nj4sec/pupy.git
+	ignore = dirty
+[submodule "shad0w"]
+	path = c2/shad0w/shad0w
+	url = git@github.com:bats3c/shad0w.git
+	ignore = dirty
+[submodule "chisel"]
+	path = post-exploitation/chisel/chisel
+	url = git@github.com:jpillora/chisel.git
+	ignore = dirty
+[submodule "pgexec"]
+	path = post-exploitation/pgexec/pgexec
+	url = git@github.com:dionach/pgexec.git
+	ignore = dirty

@@ -1,0 +1,1 @@
+docker build -t shadow shad0w/.

@@ -78,7 +78,8 @@ RUN apt-get update --fix-missing && apt-get upgrade -y && apt-get dist-upgrade -
     amass \
     wget \
     exploitdb \
-    pwncat 
+    pwncat \
+    webshells
 
 RUN apt-get update --fix-missing && apt-get upgrade -y && apt-get dist-upgrade -y && DEBIAN_FRONTEND=noninteractive apt-get install -y \
     powercat \
