@@ -245,3 +245,6 @@
 [submodule "bloodyAD"]
 	path = exploitation/bloodyAD/bloodyAD
 	url = git@github.com:CravateRouge/bloodyAD.git
+[submodule "GitTools"]
+	path = vulnerability-analysis/GitTools/GitTools
+	url = git@github.com:internetwache/GitTools.git
