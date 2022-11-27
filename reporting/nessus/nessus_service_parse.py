@@ -59,6 +59,10 @@ def main():
     args = parser.parse_args()
     #input_dir = sys.argv[1]
     
+    if not os.path.exists(args.o):
+        print("output dir does not exist, creating it for you")
+        os.makedirs(args.o)
+    
     services = {
         "10342" : "vnc",
         "10267" : "ssh",
@@ -101,7 +105,8 @@ def main():
         "46181" : "jboss_web_console_bypass",
         "151440" : "spooler_service",
         "97833" : "ms17-010",
-        "125313" : "bluekeep"
+        "125313" : "bluekeep",
+        "152102" : "unauth_petit_potam"
     }
     
     results_ips = {}

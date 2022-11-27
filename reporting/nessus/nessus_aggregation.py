@@ -9,6 +9,7 @@ import re
 client_software = {
     "Apple Software Update" : "(?:^Apple\SSoftware\SUpdate\s.*)(?!.*Unsupported.*)",
     "Foxit 3D Plugin" : "(?:^Foxit\s3D\sPlugin.*)(?!.*Unsupported.*)",
+    "Foxit PDF Reader" : "(?:^Foxit\sPDF\sReader.*)(?!.*Unsupported.*)",
     "Adobe Flash Player" : "(?:^Adobe\sFlash\sPlayer\s.*)(?!.*Unsupported.*)",
     "Adobe AIR" : "(?:^Adobe\sAIR\s.*)(?!.*Unsupported.*)",
     "Adobe Acrobat" : "(?:^Adobe\sAcrobat.*Vulnerabilities.*)(?!.*Unsupported.*)",
@@ -26,26 +27,33 @@ client_software = {
     "Adobe Prelude" : "(?:^Adobe\sPrelude\s.*)(?!.*Unsupported.*)",
     "Adobe Digital Editions" : "(?:^Adobe\sDigital\sEditions\s.*)(?!.*Unsupported.*)",
     "Adobe Premiere Rush" : "(?:^Adobe\sPremiere\sRush\s.*)(?!.*Unsupported.*)",
+    "Adobe Character Animator" : "(?:^Adobe\sCharacter\sAnimator\s.*)(?!.*Unsupported.*)",
+    "Adobe Animate" : "(?:^Adobe\sAnimate\s.*)(?!.*Unsupported.*)",
+    "AMD Platform Security Processor" : "(?:^AMD\sPlatform\sSecurity\sProcessor.*)(?!.*Unsupported.*)",
     "Shibboleth" : "(?:^Shibboleth\s.*)(?!.*Unsupported.*)",
     "Oracle Java" : "(?:^Oracle\sJava\s.*)(?!.*Unsupported.*)|(?:^Sun\sJava\s.*)(?!.*Unsupported.*)",
     "Mozilla Firefox" : "(?:^Mozilla\sFirefox\s.*)(?!.*Unsupported.*)|(?:^Firefox\s.*)(?!.*Unsupported.*)",
     "Microsoft Office" : "^Security\sUpdates.*Office.*",
     "VLC Media Player" : "(?:^VLC.*Vulnerabilities.*)(?!.*Unsupported.*)|(?:^VLC\sMedia\sPlayer\s.*)(?!.*Unsupported.*)",
+    "Commvault" : "(?:^Commvault.*Vulnerabilities.*)(?!.*Unsupported.*)",
     "Apple iTunes" :"(?:^Apple\siTunes.*Vulnerabilities.*)(?!.*Unsupported.*)",
     "7-Zip" : "(?:^7-[Zz]ip\s<\s)(?!.*Unsupported.*)",
     "Autodesk" : "(?:^Autodesk\s.*)(?!.*Unsupported.*)",
     "Veritas Backup" : "(?:^Veritas.*)(?!.*Unsupported.*)",
-    "HPE Smart" : "(?:^HPE\sSmart\s.*)(?!.*Unsupported.*)",
     "Symantec Enpoint Protection" : "(?:^Symantec\sEndpoint\sProtection\s)(?!.*Unsupported.*)",
     "Wireshark" : "(?:^Wireshark.*)(?!.*Unsupported.*)",
     "WinRAR" : "(?:^RARLAB\sWinRAR.*)(?!.*Unsupported.*)",
+    "File Zilla client" : "(?:^FileZilla\sClient.*)(?!.*Unsupported.*)",
     "Google Chrome" : "(?:^Google\sChrome.*)(?!.*Unsupported.*)",
     "Evernote" : "(?:^Evernote.*)(?!.*Unsupported.*)",
     "Oracle Document Capture" : "(?:^Oracle\sDocument\sCapture.*)(?!.*Unsupported.*)",
     "Oracle VM VirtualBox" : "(?:^Oracle\sVM\sVirtualBox.*)(?!.*Unsupported.*)",
     "Git for Windows" : "(?:^Git\sfor\sWindows.*)(?!.*Unsupported.*)",
     "VMware Tools" : "(?:^VMware\sTools.*)(?!.*Unsupported.*)",
+    "HP, Samsung, and Xerox Printer Driver" : "(?:^HP.*Samsung.*and\sXerox\sPrinter\sDriver.*)(?!.*Unsupported.*)",
+    "Azure Service Fabric" : "(?:^Azure\sService\sFabric.*)(?!.*Unsupported.*)",
     "VMware vSphere Client" : "(?:^VMware\svSphere\sClient.*)(?!.*Unsupported.*)",
+    "Intel Management Engine" : "(?:^Intel\sManagement\sEngine.*)(?!.*Unsupported.*)",
     "VMware Workstation" : "(?:^VMware\sWorkstation\s.*Vulnerabilities.*)(?!.*Unsupported.*)",
     "VMware Horizon View Client" : "(?:^VMware\sHorizon\sView\sClient.*)(?!.*Unsupported.*)",
     "Fortinet Forticlient" : "(?:^Fortinet\sFortiClient.*)(?!.*Unsupported.*)",
@@ -68,6 +76,7 @@ client_software = {
     "Cisco AnyConnect" : "(?:^Cisco\sAnyConnect\sSecure\s.*)(?!.*Unsupported.*)",
     "Cisco WebEx" : "(?:^Cisco\sWeb[eE]x\s.*)(?!.*Unsupported.*)",
     "Cisco VPN CLient" : "(?:^Cisco\sVPN\sClient.*)(?!.*Unsupported.*)",
+    "Cisco Jabber" : "(?:^Cisco\sJabber\sClient.*)(?!.*Unsupported.*)",
     "IBM Tivoli Storage Manager Client" : "(?:^IBM\sTivoli\sStorage\sManager\sClient\s.*)(?!.*Unsupported.*)",
     "IBM Spectrum Protect" : "(?:^IBM\sSpectrum\sProtect\s.*)(?!.*Unsupported.*)",
     "Sybase ASA Client" : "(?:^Sybase\sASA\sClient\s.*)(?!.*Unsupported.*)",
@@ -85,6 +94,17 @@ client_software = {
     "Google Earth" : "(?:^Google\sEarth\sPro\s.*Vulnerabilities.*)(?!.*Unsupported.*)",
     "Docker for Windows" : "(?:^Docker\sfor\sWindows.*)(?!.*Unsupported.*)",
     "Microsoft Edge" : "(?:^Microsoft\sEdge\s\(Chromium\).*)(?!.*Unsupported.*)",
+    "Microsoft Visio" : "(?:.*Microsoft\sVisio\s.*)(?!.*Unsupported.*)",
+    "Microsoft Excel" : "(?:.*Microsoft\sExcel\s.*)(?!.*Unsupported.*)",
+    "Microsoft PowerPoint" : "(?:.*Microsoft\sPowerPoint\s.*)(?!.*Unsupported.*)",
+    "Microsoft Word" : "(?:.*Microsoft\sWord\s.*)(?!.*Unsupported.*)",
+    "Microsoft OneDrive" : "(?:.*Microsoft\sOneDrive\s.*)(?!.*Unsupported.*)",
+    "Microsoft Silverlight" : "(?:.*Microsoft\sSilverlight\s.*)(?!.*Unsupported.*)",
+    "Microsoft Outlook" : "(?:.*Microsoft\sOutlook\s.*)(?!.*Unsupported.*)|(?:.*Security.*\sOutlook\s.*)(?!.*Unsupported.*)",
+    "Microsoft Publisher" : "(?:.*Microsoft\sPublisher\s.*)(?!.*Unsupported.*)",
+    "Microsoft .NET Core" : "(?:.*Security\sNET\sCore\s.*)(?!.*Unsupported.*)",
+    "Microsoft Project" : "(?:.*Microsoft\sProject\s.*)(?!.*Unsupported.*)",
+    "Microsoft Power BI Report Server" : "(?:.*Microsoft\sPower\sBI\sReport\sServer\s.*)(?!.*Unsupported.*)",
     "NVIDIA GeForce Experience" : "(?:^NVIDIA\sGeForce\sExperience.*)(?!.*Unsupported.*)",
     "McAfee Agent" : "(?:^McAfee\sAgent.*)(?!.*Unsupported.*)",
     "McAfee Endpoint Security" : "(?:^McAfee\sEndpoint\sSecurity.*)(?!.*Unsupported.*)",
@@ -110,20 +130,25 @@ client_software = {
 }
 
 server_software = {
-    "Firebird SQL Server" : "^Firebird\sSQL\sServer.*",
+    "Firebird SQL Server" : "^Firebird\s.*\sServer\s.*",
+    "Netatalk" : "^Netatalk\s.*",
     "Oracle Database" : "^Oracle.*Database.*Server.*",
     "Oracle WebLogic" : "^Oracle\sWebLogic\s.*",
     "Oracle RDBMS" : "^Oracle\sRDBMS\s.*",
     "Oracle TNS Listener" : "^Oracle\sTNS\sListener\s.*",
     "Oracle Fusion" : "^Oracle\sFusion\s.*",
+    "RomPager" : "^RomPager\s.*",
     "Apache" : "^(?:Apache\s.*)(?!.*\sStruts\s*)(?!.*\sTomcat\s*)(?!.*\sMultiviews\s*)",
     #"Apache" : "^(?:Apache\s.*Vulnerabilities.*)(?:Apache\s.*Vulnerability)(?:Apache\s.*Disclosure)(?!.*\sStruts\s*)(?!.*\sTomcat\s*)",
     "Apache Tomcat" : "(?:^Apache\sTomcat\s.*)(?!.*\sDefault\sFiles*)",
+    "Acme thttpd" : "(?:^Acme\sthttpd\s.*)(?!.*Unsupported.*)",
     "Apache Struts" : "(?:^Apache\sStruts\s.*)(?!.*\sDefault\sFiles*)",
     "Apache Multiviews" : "(?:^Apache\sMultiviews\s.*)(?!.*\sDefault\sFiles*)",
     "PHP" : "(?:^PHP.*)(?!.*Unsuported.*)(?!.*Detection.*)",
-    "Dropbear SSH Server" : ".*Dropbear.*SSH.*Vulnerabilities.*",
-    "OpenSSH Server" : ".*OpenSSH.*Vulnerabilities.*",
+    "Samba" : "(?:^Samba\s.*)(?!.*Unsuported.*)(?!.*Detection.*)",
+    "Dropbear SSH Server" : "(?:.*Dropbear.*SSH.*)(?!.*Detection.*)",
+    "OpenSSH Server" : "(?:.*OpenSSH.*Vulnerabilities.*)(?!.*Detection.*)",
+    "JQuery" : "(?:^JQuery.*)(?!.*Detection.*)",
     "MongoDB" : ".*MongoDB.*Vulnerabilities",
     "Jenkins" : "^Jenkins.*Vulnerabilities.*",
     "Microsoft ASP.NET" : "^Microsoft\sASP\.NET*.*",
@@ -131,6 +156,7 @@ server_software = {
     "JBoss Enterprise" : "^JBoss\sEnterprise\sApplication.*",
     "Microsoft Dynamics" : "^Microsoft\sDynamics\s365.*",
     "Microsoft SQL Server" : "(?:.*Microsoft\sSQL\sServer.*)(?!.*Unsupported.*)",
+    "Cisco TelePresence" : "(?:.*Cisco\sTelePresence.*)(?!.*Unsupported.*)",
     "Microsoft DNS Server" : "(?:.*Microsoft\sDNS\sServer.*)(?!.*Unsupported.*)",
     "Microsoft IIS" : "(?:^Microsoft\sIIS\s.*Server.*)(?!.*Unsupported.*)",
     #"Exchange Server" : "(?:.*Exchange.*)(?!.*Unsupported.*)",
@@ -140,8 +166,8 @@ server_software = {
     "Dell OpenManage Server Administrator" : "^Dell\sOpenManage\sServer\sAdministrator\s*",
     "SolarWinds" : "^SolarWinds.*"        ,
     "HP iLO" : "HP\siLO.*",
-    "WMware ESXi" : ".*ESXi\s.*",
-    "WMware vCenter" : "^VMware\svCenter\s.*",
+    "VMware ESXi" : ".*ESXi\s.*",
+    "VMware vCenter" : "^VMware\svCenter\s.*",
     "HPE Smart Storage Administrator" : "^HPE\sSmart\sStorage\sAdministrator.*",
     "HP System Management Homepage" : "^HP\sSystem\sManagement\sHomepage\s.*",
     "IBM Tivoli Management Framework" : "^IBM\sTivoli\sManagement\sFramework\s.*",
@@ -162,7 +188,6 @@ server_software = {
     "PostgreSQL" : "(?:^PostgreSQL\s.*Vulnerabilities.*)(?!.*Unsupported.*)",
     "Flask" : "^Flask\s.*",
     "QNAP QTS / QuTS Hero" : "^QNAP\sQTS\s.*",
-    "Samba" : "^Samba\s.*[Vv]ulnerabilities.*",
     "Splunk" : "(?:^Splunk\s.*)(?!.*Unsupported.*)(?!.*Detection.*)",
     "Network Time Protocol" : "(?:^Network\sTime\sProtocol\s.*)(?:^NTP\s.*)(?!.*Scanner.*)",
     "Telnetd" : "(?:^Telnetd\s-\sRemote\sCode\sExecution\s.*)",
@@ -200,7 +225,8 @@ information_disclosure = {
 clear_text_protocols = {
     "Telnet Server" : "Unencrypted\sTelnet\sServer",
     "rexecd Service" : "rexecd\sService\sDetection",
-    "rlogin Service" : "rlogin\sService\sDetection"
+    "rlogin Service" : "rlogin\sService\sDetection",
+    "AMQP Service" : "AMQP\sCleartext\sAuthentication"
 }
 
 ### OS Patches
@@ -441,11 +467,13 @@ def family_collector(findings, families, filename):
                                 results[plugin_name]["reference"] = xref
                                 results[plugin_name]["affected"] += [hostname]
                     
-    #print reg keys
-    for name, key in reg_keys.items():
-        print(name)
-        print(key)
-        print("---")
+    #write reg keys to txt file
+    if reg_keys:
+        with open(filename + "_reg_keys.txt", 'w') as f:
+            for name, key in reg_keys.items():
+                f.write(name + "\n")
+                f.write(key + "\n")
+                f.write("---\n")
     
     
     if results:
@@ -527,25 +555,6 @@ def compliance_collector(findings, filename):
                 line = "{}|{}|{}|{}|{}".format(result["compliance_check_name"], result["compliance_policy_value"], result["compliance_actual_value"], result["compliance_result"], result["compliance_audit_file"])
                 f.write(line + "\n")
 
-#def check_names(findings, names):
-#    plugin_names = []
-#    for host in findings:
-#        for item in host.iter("ReportItem"):
-#            if item.find("risk_factor").text == "None":
-#                # ignore infos
-#                pass
-#            else:
-#                plugin_names += [item.attrib["pluginName"]]
-#
-#    plugin_names_uniq = set(plugin_names)
-#    
-#    for plugin_name in plugin_names_uniq:
-#        match = False
-#        for name, regex in names.items():
-#            if re.search(regex, plugin_name):
-#                match = True
-#        if match == False:
-#            print(plugin_name)
 
 def get_findings(i):
     if i.endswith(".nessus"):
@@ -561,6 +570,52 @@ def get_findings(i):
                 findings = nessus.findall("Report/ReportHost")
                 for finding in findings:
                     yield finding
+
+def check_names(findings, names, filename):
+    # find plugins that are not aggregated
+    plugin_names = []
+    results = []
+
+    families = [
+        "Windows : Microsoft Bulletins",
+        "Red Hat Local Security Checks",
+        "Solaris Local Security Checks",
+        "Oracle Linux Local Security Checks",
+        "Ubuntu Local Security Checks",
+        "Fedora Local Security Checks"
+    ]
+
+    for host in findings:
+        for item in host.iter("ReportItem"):
+            if item.find("risk_factor").text == "None":
+                # ignore infos
+                pass
+            else:
+                # ignore OS patches
+                plugin_family = item.attrib["pluginFamily"]
+                if plugin_family in families:
+                    pass
+                else:
+                    plugin_names += [item.attrib["pluginName"]]
+
+    plugin_names_uniq = set(plugin_names)
+    
+    # check what is left against aggregation regexs
+    for plugin_name in plugin_names_uniq:
+        match = False
+        for i in names:
+            for name, regex in i.items():
+                if re.search(regex, plugin_name):
+                    match = True
+                    break
+        if match == False:
+            results += [plugin_name]
+
+    
+    with open(filename, 'w') as f:
+        for i in results:
+            f.write(i + "\n")
+
 
 def main():
     parser = argparse.ArgumentParser(description="Parse .nessus file for services")
@@ -609,9 +664,9 @@ def main():
     family_collector(get_findings(args.i), ubuntu, os.path.join(args.o, "ubuntu_patches_collected.table"))
     family_collector(get_findings(args.i), fedora, os.path.join(args.o, "fedora_patches_collected.table"))  
     
-    compliance_collector(get_findings(args.i), os.path.join(args.o, "compliance.table"))  
+    #compliance_collector(get_findings(args.i), os.path.join(args.o, "compliance.table"))  
     
-    #check_names(get_findings(args.i), client_software)
+    check_names(get_findings(args.i), [client_software, server_software, defender, ssl_tls, terminal_services, ssh_servers, unsupported_software, unsupported_software, information_disclosure, clear_text_protocols], os.path.join(args.o, "not_aggregated.lst"))
 
 if __name__ == '__main__':
     main()
