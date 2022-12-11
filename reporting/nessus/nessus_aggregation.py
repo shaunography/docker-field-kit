@@ -126,7 +126,8 @@ client_software = {
     "Oracle Mysql Connectors" : "(?:^Oracle\sMySQL\sConnectors\s.*)(?!.*Unsupported.*)",
     "Python" : "(?:^Python\s.*)(?!.*Unsupported.*)",
     "AMD Platform Security Processor" : "(?:^AMD\sPlatform\sSecurity\sProcessor\s.*)(?!.*Unsupported.*)",
-    "Dell dbutil Driver" : "(?:^Dell\sdbutil\sDriver\s.*)(?!.*Unsupported.*)"
+    "Dell dbutil Driver" : "(?:^Dell\sdbutil\sDriver\s.*)(?!.*Unsupported.*)",
+    "Dell Client BIOS" : "(?:^Dell\sClient\sBIOS\s.*)(?!.*Unsupported.*)"
 }
 
 server_software = {

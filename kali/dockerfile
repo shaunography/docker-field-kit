@@ -79,7 +79,8 @@ RUN apt-get update --fix-missing && apt-get upgrade -y && apt-get dist-upgrade -
     wget \
     exploitdb \
     pwncat \
-    webshells
+    webshells \
+    nuclei
 
 RUN apt-get update --fix-missing && apt-get upgrade -y && apt-get dist-upgrade -y && DEBIAN_FRONTEND=noninteractive apt-get install -y \
     powercat \
@@ -147,6 +148,7 @@ RUN git clone https://github.com/zyn3rgy/LdapRelayScan
 RUN git clone https://github.com/eldraco/Sapito
 RUN git clone https://github.com/joaomatosf/jexboss
 RUN git clone https://github.com/gremwell/o365enum
+RUN git clone https://github.com/blacklanternsecurity/TREVORspray
 
 #WORKDIR /opt/inf/PCredz
 RUN apt-get install -y libpcap-dev && python3 -m pip install Cython && python3 -m pip install python-libpcap
@@ -180,6 +182,9 @@ RUN python2 setup.py install
 
 WORKDIR /opt/jexboss
 RUN python3 -m pip install -r requires.txt
+
+WORKDIR /opt/TREVORspray
+RUN python3 -m pip install .
 
 WORKDIR /opt/
 ## Binaries

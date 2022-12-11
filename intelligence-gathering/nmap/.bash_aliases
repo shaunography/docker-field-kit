@@ -12,7 +12,7 @@ sudo nmap -sV --open -T4 -F -oA nmap-fast-%Y_%m_%d-%H_%M_%S $*
 }
 
 nmap-fast-no-ping() {
-sudo nmap -sV --open -T4 -F -Pn -oA nmap-fast-%Y_%m_%d-%H_%M_%S $*
+sudo nmap -sV --open -T4 -F -Pn -oA nmap-fast-no-ping-%Y_%m_%d-%H_%M_%S $*
 }
 
 nmap-standard() {
@@ -20,7 +20,7 @@ sudo nmap -sV --open -T4 -oA nmap-standard-%Y_%m_%d-%H_%M_%S $*
 }
 
 nmap-standard-no-ping() {
-sudo nmap -sV --open -T4 -Pn -oA nmap-standard-%Y_%m_%d-%H_%M_%S $*
+sudo nmap -sV --open -T4 -Pn -oA nmap-standard-no-ping-%Y_%m_%d-%H_%M_%S $*
 }
 
 nmap-all() {
@@ -28,7 +28,7 @@ sudo nmap -sV --open -T4 -p- -oA nmap-all-%Y_%m_%d-%H_%M_%S $*
 }
 
 nmap-all-no-ping() {
-sudo nmap -sV --open -T4 -p- -Pn -oA nmap-all-%Y_%m_%d-%H_%M_%S $*
+sudo nmap -sV --open -T4 -p- -Pn -oA nmap-all-no-ping-%Y_%m_%d-%H_%M_%S $*
 }
 
 nmap-smb-enum() {
@@ -36,7 +36,7 @@ sudo nmap -sV --open -T4 -p U:137,T:139,T:445 --script smb-enum-users,smb-enum-s
 }
 
 nmap-smb-enum-no-ping() {
-sudo nmap -sV --open -T4 -p U:137,T:139,T:445 --script smb-enum-users,smb-enum-shares,smb-os-discovery,smb-security-mode,smb-mbenum,smb-vuln-* -Pn -oA nmap-smb-enum-%Y_%m_%d-%H_%M_%S $*
+sudo nmap -sV --open -T4 -p U:137,T:139,T:445 --script smb-enum-users,smb-enum-shares,smb-os-discovery,smb-security-mode,smb-mbenum,smb-vuln-* -Pn -oA nmap-smb-enum-no-ping-%Y_%m_%d-%H_%M_%S $*
 }
 
 nmap-http-default() {
@@ -44,5 +44,5 @@ sudo nmap -sV --open -T4 --script http-default-accounts -oA nmap-http-default-%Y
 }
 
 nmap-http-default-no-ping() {
-sudo nmap -sV --open -T4 --script http-default-accounts -Pn -oA nmap-http-default-%Y_%m_%d-%H_%M_%S $*
+sudo nmap -sV --open -T4 --script http-default-accounts -Pn -oA nmap-http-default-no-ping-%Y_%m_%d-%H_%M_%S $*
 }

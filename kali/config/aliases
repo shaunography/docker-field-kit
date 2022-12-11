@@ -12,7 +12,7 @@ sudo nmap -sV --open -T4 -F -oA nmap-fast-%Y_%m_%d-%H_%M_%S $*
 }
 
 nmap-fast-no-ping() {
-sudo nmap -sV --open -T4 -F -Pn -oA nmap-fast-%Y_%m_%d-%H_%M_%S $*
+sudo nmap -sV --open -T4 -F -Pn -oA nmap-fast-no-ping-%Y_%m_%d-%H_%M_%S $*
 }
 
 nmap-standard() {
@@ -20,7 +20,7 @@ sudo nmap -sV --open -T4 -oA nmap-standard-%Y_%m_%d-%H_%M_%S $*
 }
 
 nmap-standard-no-ping() {
-sudo nmap -sV --open -T4 -Pn -oA nmap-standard-%Y_%m_%d-%H_%M_%S $*
+sudo nmap -sV --open -T4 -Pn -oA nmap-standard-no-ping-%Y_%m_%d-%H_%M_%S $*
 }
 
 nmap-all() {
@@ -28,7 +28,7 @@ sudo nmap -sV --open -T4 -p- -oA nmap-all-%Y_%m_%d-%H_%M_%S $*
 }
 
 nmap-all-no-ping() {
-sudo nmap -sV --open -T4 -p- -Pn -oA nmap-all-%Y_%m_%d-%H_%M_%S $*
+sudo nmap -sV --open -T4 -p- -Pn -oA nmap-all-no-ping-%Y_%m_%d-%H_%M_%S $*
 }
 
 nmap-smb-enum() {
