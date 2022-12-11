@@ -282,3 +282,6 @@
 	path = post-exploitation/PEzor/PEzor
 	url = git@github.com:phra/PEzor.git
 	ignore = dirty
+[submodule "CrackMapExec"]
+	path = exploitation/crackmapexec/CrackMapExec
+	url = git@github.com:Porchetta-Industries/CrackMapExec.git

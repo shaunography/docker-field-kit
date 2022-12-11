@@ -1,1 +1,1 @@
-docker build -t sapito Sapito/. 
+docker build -t kali .
