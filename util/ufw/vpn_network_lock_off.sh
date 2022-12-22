@@ -20,22 +20,3 @@ ufw default allow outgoing
 ufw allow 22000
 ufw allow 22000/udp
 ufw allow 21027/udp
-
-# allow ssh
-if [ $(hostname) = "thor" ]
-	then
-		ufw allow ssh
-fi
-
-if [ $(hostname) = "odin" ]
-	then
-		ufw allow ssh
-fi
-
-
-# allow Bittorrent
-if [ $(hostname) = "thor" ]
-	then
-		ufw allow 61618
-		ufw allow 61618/udp
-fi

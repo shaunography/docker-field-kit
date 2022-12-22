@@ -285,3 +285,6 @@
 [submodule "CrackMapExec"]
 	path = exploitation/crackmapexec/CrackMapExec
 	url = git@github.com:Porchetta-Industries/CrackMapExec.git
+[submodule "wtf"]
+	path = util/wtf/wtf
+	url = git@github.com:wtfutil/wtf.git
