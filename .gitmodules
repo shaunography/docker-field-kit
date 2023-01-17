@@ -285,6 +285,16 @@
 [submodule "CrackMapExec"]
 	path = exploitation/crackmapexec/CrackMapExec
 	url = git@github.com:Porchetta-Industries/CrackMapExec.git
+	ignore = dirty
 [submodule "wtf"]
 	path = util/wtf/wtf
 	url = git@github.com:wtfutil/wtf.git
+	ignore = dirty
+[submodule "wordlists"]
+	path = wordlists/wordlists
+	url = git@github.com:trickest/wordlists.git
+	ignore = dirty
+[submodule "prowler"]
+	path = vulnerability-analysis/prowler/prowler
+	url = git@github.com:prowler-cloud/prowler.git
+	ignore = dirty
