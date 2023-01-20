@@ -38,7 +38,8 @@ RUN apt-get update --fix-missing && apt-get upgrade -y && apt-get dist-upgrade -
     sipcalc \
     curl \
     wget \
-    pciutils
+    pciutils \
+    eapmd5pass
 
 ## Git Tools
 ### Create known_hosts for git cloning

@@ -298,3 +298,6 @@
 	path = vulnerability-analysis/prowler/prowler
 	url = git@github.com:prowler-cloud/prowler.git
 	ignore = dirty
+[submodule "snotra_to_table"]
+	path = reporting/snotra_to_table
+	url = git@github.com:shaunography/snotra_to_table.git
