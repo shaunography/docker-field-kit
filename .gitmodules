@@ -301,3 +301,6 @@
 [submodule "snotra_to_table"]
 	path = reporting/snotra_to_table
 	url = git@github.com:shaunography/snotra_to_table.git
+[submodule "ScoutSuite"]
+	path = vulnerability-analysis/ScoutSuite/ScoutSuite
+	url = git@github.com:nccgroup/ScoutSuite.git
