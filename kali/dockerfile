@@ -57,7 +57,11 @@ RUN apt-get update --fix-missing && apt-get upgrade -y && apt-get dist-upgrade -
     dirb \
     gobuster \
     sipcalc \
-    screen 
+    screen \
+    chisel \
+    gitleaks \
+    wordlistraider
+
 
 RUN apt-get update --fix-missing && apt-get upgrade -y && apt-get dist-upgrade -y && DEBIAN_FRONTEND=noninteractive apt-get install -y \
     metasploit-framework \
@@ -114,7 +118,19 @@ RUN apt-get update --fix-missing && apt-get upgrade -y && apt-get dist-upgrade -
     ftp-ssl \
     tftp \
     theharvester \
-    netdiscover
+    netdiscover \
+    certipy-ad \
+    bloodhound.py \
+    peass \
+    bruteshark \
+    evil-winrm \
+    lapsdumper \
+    proxify \
+    spraykatz \
+    trufflehog \
+    arjun
+
+
 
 WORKDIR /opt
 
@@ -123,7 +139,7 @@ RUN wget https://bootstrap.pypa.io/pip/2.7/get-pip.py && python2 get-pip.py
 
 # Pip install
 RUN python3 -m pip install mitm6 service_identity
-RUN python3 -m pip install witnessme
+#RUN python3 -m pip install witnessme
 
 ## Git Tools
 #RUN mkdir /root/.ssh/ && touch /root/.ssh/known_hosts
@@ -185,8 +201,8 @@ WORKDIR /opt/jexboss
 RUN python3 -m pip install -r requires.txt
 
 # trevorspray
-RUN pip install git+https://github.com/blacklanternsecurity/trevorproxy && \
-    pip install git+https://github.com/blacklanternsecurity/trevorspray
+#RUN pip install git+https://github.com/blacklanternsecurity/trevorproxy && \
+#    pip install git+https://github.com/blacklanternsecurity/trevorspray
 
 WORKDIR /opt/
 ## Binaries
@@ -198,13 +214,13 @@ RUN wget https://github.com/hdm/nextnet/releases/download/v0.0.2/nextnet_0.0.2_l
 RUN wget https://github.com/liamg/traitor/releases/download/v0.0.14/traitor-amd64
 RUN wget https://github.com/lkarlslund/ldapnomnom/releases/download/v1.0.7/ldapnomnom-linux-amd64
 
-RUN wget https://github.com/jpillora/chisel/releases/download/v1.7.6/chisel_1.7.6_linux_386.gz
-RUN wget https://github.com/jpillora/chisel/releases/download/v1.7.6/chisel_1.7.6_linux_amd64.gz
-RUN wget https://github.com/jpillora/chisel/releases/download/v1.7.6/chisel_1.7.6_windows_386.gz
-RUN wget https://github.com/jpillora/chisel/releases/download/v1.7.6/chisel_1.7.6_windows_amd64.gz
+#RUN wget https://github.com/jpillora/chisel/releases/download/v1.7.6/chisel_1.7.6_linux_386.gz
+#RUN wget https://github.com/jpillora/chisel/releases/download/v1.7.6/chisel_1.7.6_linux_amd64.gz
+#RUN wget https://github.com/jpillora/chisel/releases/download/v1.7.6/chisel_1.7.6_windows_386.gz
+#RUN wget https://github.com/jpillora/chisel/releases/download/v1.7.6/chisel_1.7.6_windows_amd64.gz
 
 ## Ruby Tools
 RUN gem install haiti-hash
-RUN gem install evil-winrm
+#RUN gem install evil-winrm
 
 CMD /bin/bash
