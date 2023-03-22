@@ -4,7 +4,12 @@ FROM kalilinux/kali-rolling
 ENV SHELL=/bin/bash
 ENV LANG=en_US.UTF-8i
 
+ARG USERNAME=shaun
+ARG USER_UID=1000
+ARG USER_GID=$USER_UID
+
 COPY ./config/.bashrc /root/.bashrc
+COPY ./config/.bashrc /home/$USERNAME/.bashrc
 COPY ./config/aliases /root/.bash_aliases
 COPY ./config/inputrc /etc/inputrc
 
@@ -222,5 +227,14 @@ RUN wget https://github.com/lkarlslund/ldapnomnom/releases/download/v1.0.7/ldapn
 ## Ruby Tools
 RUN gem install haiti-hash
 #RUN gem install evil-winrm
+
+RUN groupadd --gid $USER_GID $USERNAME \
+    && useradd --uid $USER_UID --gid $USER_GID -m $USERNAME \
+    && apt-get update \
+    && apt-get install -y sudo \
+    && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \
+    && chmod 0440 /etc/sudoers.d/$USERNAME
+
+USER $USERNAME
 
 CMD /bin/bash
