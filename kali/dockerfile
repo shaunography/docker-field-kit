@@ -2,9 +2,9 @@
 FROM kalilinux/kali-rolling
 
 ENV SHELL=/bin/bash
-ENV LANG=en_US.UTF-8i
+ENV LANG=en_US.UTF-8
 
-ARG USERNAME=shaun
+ARG USERNAME=kali
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID
 
@@ -40,7 +40,8 @@ RUN apt-get update --fix-missing && apt-get upgrade -y && apt-get dist-upgrade -
     finger \
     davtest \
     redis-tools \
-    odat
+    odat \
+    notify-send
     
 RUN apt-get update --fix-missing && apt-get upgrade -y && apt-get dist-upgrade -y && DEBIAN_FRONTEND=noninteractive apt-get install -y \
     ike-scan \
