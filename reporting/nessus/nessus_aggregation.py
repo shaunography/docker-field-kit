@@ -7,6 +7,7 @@ import re
 #import openpyxl
 
 client_software = {
+    "Curl" : "(?:^Curl\s.*)(?!.*Unsupported.*)",
     "Apple Software Update" : "(?:^Apple\SSoftware\SUpdate\s.*)(?!.*Unsupported.*)",
     "Foxit 3D Plugin" : "(?:^Foxit\s3D\sPlugin.*)(?!.*Unsupported.*)",
     "Foxit PDF Reader" : "(?:^Foxit\sPDF\sReader.*)(?!.*Unsupported.*)",

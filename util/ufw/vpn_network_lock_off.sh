@@ -16,6 +16,9 @@ ufw enable
 ufw default reject incoming
 ufw default allow outgoing
 
+# allow ssh
+ufw allow from 192.168.1.0/24 to any port 22
+
 # allow syncthing
 ufw allow 22000
 ufw allow 22000/udp
