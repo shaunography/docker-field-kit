@@ -301,15 +301,20 @@
 [submodule "snotra_to_table"]
 	path = reporting/snotra_to_table
 	url = git@github.com:shaunography/snotra_to_table.git
+	ignore = dirty
 [submodule "ScoutSuite"]
 	path = vulnerability-analysis/ScoutSuite/ScoutSuite
 	url = git@github.com:nccgroup/ScoutSuite.git
+	ignore = dirty
 [submodule "dockerfile-x11docker-xfce"]
 	path = util/dockerfile-x11docker-xfce
 	url = git@github.com:mviereck/dockerfile-x11docker-xfce.git
+	ignore = dirty
 [submodule "dockerfile-x11docker-gnome"]
 	path = util/dockerfile-x11docker-gnome
 	url = git@github.com:mviereck/dockerfile-x11docker-gnome.git
+	ignore = dirty
 [submodule "kubernetes-rbac-audit"]
 	path = vulnerability-analysis/kubernetes-rbac-audit
 	url = git@github.com:cyberark/kubernetes-rbac-audit.git
+	ignore = dirty
