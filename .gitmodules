@@ -318,3 +318,13 @@
 	path = vulnerability-analysis/kubernetes-rbac-audit
 	url = git@github.com:cyberark/kubernetes-rbac-audit.git
 	ignore = dirty
+[submodule "365Inspect"]
+	path = vulnerability-analysis/365Inspect/365Inspect
+	url = git@github.com:shaunography/365Inspect.git
+	ignore = dirty
+[submodule "365Inspect+"]
+	path = vulnerability-analysis/365Inspect+/365Inspect
+	url = git@github.com:asterictnl-lvdw/365Inspect.git
+[submodule "OneRuleToRuleThemStill"]
+	path = post-exploitation/OneRuleToRuleThemStill
+	url = git@github.com:stealthsploit/OneRuleToRuleThemStill.git

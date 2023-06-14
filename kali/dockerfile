@@ -133,7 +133,8 @@ RUN apt-get update --fix-missing && apt-get upgrade -y && apt-get dist-upgrade -
     proxify \
     spraykatz \
     trufflehog \
-    arjun
+    arjun \
+    remmina
 
 
 
