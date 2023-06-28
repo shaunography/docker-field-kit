@@ -106,7 +106,8 @@ def main():
         "151440" : "spooler_service",
         "97833" : "ms17-010",
         "125313" : "bluekeep",
-        "152102" : "unauth_petit_potam"
+        "152102" : "unauth_petit_potam",
+        "72684" : "WMI user enum"
     }
     
     results_ips = {}
