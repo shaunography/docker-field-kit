@@ -328,3 +328,6 @@
 [submodule "OneRuleToRuleThemStill"]
 	path = post-exploitation/OneRuleToRuleThemStill
 	url = git@github.com:stealthsploit/OneRuleToRuleThemStill.git
+[submodule "pywerview"]
+	path = intelligence-gathering/pywerview/pywerview
+	url = git@github.com:the-useless-one/pywerview.git
