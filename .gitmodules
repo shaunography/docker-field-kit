@@ -328,3 +328,6 @@
 [submodule "OneRuleToRuleThemStill"]
 	path = post-exploitation/OneRuleToRuleThemStill
 	url = git@github.com:stealthsploit/OneRuleToRuleThemStill.git
+[submodule "quickemu"]
+	path = util/quickemu
+	url = https://github.com/wimpysworld/quickemu
