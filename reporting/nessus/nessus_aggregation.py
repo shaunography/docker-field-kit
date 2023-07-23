@@ -128,7 +128,9 @@ client_software = {
     "Python" : "(?:^Python\s.*)(?!.*Unsupported.*)",
     "AMD Platform Security Processor" : "(?:^AMD\sPlatform\sSecurity\sProcessor\s.*)(?!.*Unsupported.*)",
     "Dell dbutil Driver" : "(?:^Dell\sdbutil\sDriver\s.*)(?!.*Unsupported.*)",
-    "Dell Client BIOS" : "(?:^Dell\sClient\sBIOS\s.*)(?!.*Unsupported.*)"
+    "Dell Client BIOS" : "(?:^Dell\sClient\sBIOS\s.*)(?!.*Unsupported.*)",
+    ".NET Core" : "(?:^Security\sUpdate\sfor\s.NET\sCore.*)(?!.*Unsupported.*)",
+    "CodeMeter" : "(?:^CodeMeter.*)(?!.*Unsupported.*)"
 }
 
 server_software = {
@@ -154,7 +156,7 @@ server_software = {
     "MongoDB" : ".*MongoDB.*Vulnerabilities",
     "Jenkins" : "^Jenkins.*Vulnerabilities.*",
     "Microsoft ASP.NET" : "^Microsoft\sASP\.NET*.*",
-    "Microsoft ASP.NET Core" : ".*Microsoft\sASP\.NET\sCore.*",
+    "Microsoft ASP.NET Core" : ".*\sASP\.NET\sCore.*",
     "JBoss Enterprise" : "^JBoss\sEnterprise\sApplication.*",
     "Microsoft Dynamics" : "^Microsoft\sDynamics\s365.*",
     "Microsoft SQL Server" : "(?:.*Microsoft\sSQL\sServer.*)(?!.*Unsupported.*)",
